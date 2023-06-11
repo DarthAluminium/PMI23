@@ -41,7 +41,7 @@ jobs:
   MyRunner:
     runs-on: self-hosted
     steps:
-      - name: Run bot
+      - name: RUN BOT
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
