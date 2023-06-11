@@ -1,7 +1,7 @@
-
+import os
 import telebot
 
-token = "6119171612:AAHreHOzfnjlBLvc7P2hQTnS-ErNeBrYv68"
+token = os.environ["tgbot_token"]
 
 bot = telebot.TeleBot(token)
 @bot.message_handler(content_types=['text'])
