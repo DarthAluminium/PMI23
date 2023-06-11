@@ -42,5 +42,5 @@ jobs:
         with:
           node-version: '14'
       - run: docker pull darthaluminium/devops:latest
-      - run: docker run darthaluminium/devops:latest
+      - run: docker run darthaluminium/devops:latest --env TGBOT_TOKEN=${{ secrets.TGBOT_TOKEN }}
 
