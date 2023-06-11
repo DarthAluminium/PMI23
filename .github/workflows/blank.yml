@@ -36,3 +36,11 @@ jobs:
         with:
           push: true
           tags: darthaluminium/devops
+      
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: docker pull darthaluminium/devops:latest
+      - run: docker run darthaluminium/devops:latest
+
