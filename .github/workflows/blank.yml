@@ -41,7 +41,8 @@ jobs:
   MyRunner:
     runs-on: self-hosted
     steps:
-      - uses: actions/setup-node@v3
+      - name: Bot launch
+        uses: actions/setup-node@v3
         with:
           node-version: '14'
 
