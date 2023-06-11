@@ -7,6 +7,7 @@ RUN python3 -m pip install pytelegrambotapi
 #copy my program to docker
 COPY bot.py bot.py
 #run program
+ENV TGBOT_TOKEN=0
 CMD python3 bot.py
 
 # The program calculates the average number of dominating sets
